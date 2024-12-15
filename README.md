@@ -18,7 +18,8 @@ o	Unencrypted data: Though the application made use of databases, for the user a
 o	All datasets not manageable: Though I fully implemented CRUD functionality for the inventory items, I did not fully implement CRUD functionality for users; in particular, I did not finish Update (the ability for a user to update their account) and Delete functionality (the ability for a user to delete their account).
 
 o	Hardcoded Variables: Lastly, I left a hardcoded variable in the code that served as a key feature in the application, which was the phone number for the SMS feature that notifies the user if an item is low or out of stock.
- 
+
+ 
 •	**Artifact Enhancements addressing the issues:**
 
 o	Unsecure login: In order to solve this issue, I realized that I would have to in some way tie the user to the items that they created in the database. This meant that I would have to modify the item’s table to include a column that would have the user’s email address, so that when a user logged in, they would only be able to pull items belonging to that user. I also had to make keeping up with items more manageable, so I changed the primary key to be a composite key consisting of the creator’s email along with an item’s id number so items could be efficiently pulled from the database when needed.
