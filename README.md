@@ -11,13 +11,13 @@ For my final capstone, I chose to do one all-encompassing project that includes 
 
 •	**Original Artifact Flaws:**
 
-	Unsecured login: Though the application required users to log in or create an account if they did not have one, the user did not have a unique inventory experience. This means that if a user creates a new account on the same device as another user, then the user could essentially gain access to the previous user’s inventory even after they logged out.
+o	Unsecured login: Though the application required users to log in or create an account if they did not have one, the user did not have a unique inventory experience. This means that if a user creates a new account on the same device as another user, then the user could essentially gain access to the previous user’s inventory even after they logged out.
 
 o	Unencrypted data: Though the application made use of databases for the user and inventory, the data stored in the databases was unencrypted, so even if the first issue was fixed, a hacker could still access unencrypted information in the event that a user’s account got hacked.
 
 o	All datasets not manageable: Though I fully implemented CRUD functionality for the inventory items, I did not fully implement CRUD functionality for users; in particular, I did not finish Update (the ability for a user to update their account) and Delete functionality (the ability for a user to delete their account).
 
-	Hardcoded Variables: Lastly, I left a hardcoded variable in the code that served as a key feature in the application. This variable was the phone number for the SMS feature that notifies the user if an item is low or out of stock.
+o	Hardcoded Variables: Lastly, I left a hardcoded variable in the code that served as a key feature in the application. This variable was the phone number for the SMS feature that notifies the user if an item is low or out of stock.
 
  
 •	**Artifact Enhancements addressing the issues:**
